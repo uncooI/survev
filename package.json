@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Open Source Surviv.io Server",
   "scripts": {
-    "start": "pnpm run build && node server/dist/api/index.js"
+    "start": "pnpm run build && node server/dist/api/index.js",
     "survev-setup": "pnpm install && tsx setup.ts",
     "dev": "concurrently \"pnpm run dev:api\" \"pnpm run dev:game\" \"pnpm run dev:client\"",
     "dev:server": "cd server && pnpm dev",
