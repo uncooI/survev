@@ -217,7 +217,7 @@ setInterval(() => {
 
 const honoServer = serve({
     fetch: app.fetch,
-    port: Config.apiServer.port,
+    port: process.env.PORT ? Number(process.env.PORT) : Config.apiServer.port,
 });
 injectWebSocket(honoServer);
 
